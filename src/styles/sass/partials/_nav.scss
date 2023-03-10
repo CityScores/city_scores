@@ -1,0 +1,36 @@
+@use "./variables";
+
+nav {
+    font-family: variables.$bebas-neue;
+    color: variables.$dark-green;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 70px;    
+
+}
+.nav_tabs, .nav_welcome {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_tabs a:hover{
+    font-size: 3rem;
+} 
+.nav_tabs {
+    width: 50%;
+}
+.nav_welcome {
+    width: 35%;
+}
+.language_button {
+    border: none;
+    border-radius: 20px;
+    background-color: #82C0CC;
+
+    padding: 0 14px;
+    margin-left: 5px;
+
+}

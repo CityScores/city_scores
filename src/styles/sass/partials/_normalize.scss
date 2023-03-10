@@ -1,0 +1,23 @@
+@use "./variables";
+
+* {
+    margin:0;
+    padding: 0 ;
+}
+body {
+    font-size: 125% ;
+    line-height: 1.6;
+    background-color: #FAF9F9;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: variables.$dark-green;
+}
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
