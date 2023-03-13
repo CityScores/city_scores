@@ -1,36 +1,60 @@
 @use "./variables";
 
 nav {
-    font-family: variables.$bebas-neue;
-    color: variables.$dark-green;
-    font-size: 2rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 25px 70px;    
-
+  font-family: variables.$bebas-neue;
+  color: variables.$dark-green;
 }
-.nav_tabs, .nav_welcome {
-    display: flex;
-    justify-content: space-between;
+.mobileBttnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-.nav_tabs a:hover{
-    font-size: 3rem;
-} 
-.nav_tabs {
-    width: 50%;
+.mobileMenuBttn {
+  // display: none;
+  border: none;
+  background-color: transparent;
 }
-.nav_welcome {
-    width: 35%;
+.mobileMenuIcon {
+  font-size: 2rem;
 }
-.language_button {
-    border: none;
-    border-radius: 20px;
-    background-color: #82C0CC;
-
-    padding: 0 14px;
-    margin-left: 5px;
-
+.mobileMenu {
+  background-color: #faf9f9;
+  position: absolute;
+  z-index: 3;
+  font-size: 3rem;
+  width: 100%;
+}
+.deskMenu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px;
+  font-size: 2rem;
+}
+// .nav_tabs, .nav_welcome {
+//     display: flex;
+//     justify-content: space-between;
+// }
+// .nav_tabs a:hover{
+//     font-size: 3rem;
+// }
+// .nav_tabs {
+//     width: 50%;
+// }
+// .nav_welcome {
+//     width: 25%;
+// }
+.language {
+  display: flex;
+}
+.language button {
+  border: none;
+  background-color: transparent;
+}
+.language li:first-child {
+  border-right: solid 2px #006d77;
+  padding-right: 2px;
+}
+.language li:last-child {
+  padding-left: 2px;
 }

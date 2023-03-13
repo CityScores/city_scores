@@ -213,34 +213,53 @@ a {
 nav {
   font-family: "Bebas Neue", cursive;
   color: #16697A;
-  font-size: 2rem;
+}
+
+.mobileBttnContainer {
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
+}
+
+.mobileMenuBttn {
+  border: none;
+  background-color: transparent;
+}
+
+.mobileMenuIcon {
+  font-size: 2rem;
+}
+
+.mobileMenu {
+  background-color: #faf9f9;
+  position: absolute;
+  z-index: 3;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.deskMenu {
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 25px 70px;
+  font-size: 2rem;
 }
 
-.nav_tabs, .nav_welcome {
+.language {
   display: flex;
-  justify-content: space-between;
 }
 
-.nav_tabs a:hover {
-  font-size: 3rem;
-}
-
-.nav_tabs {
-  width: 50%;
-}
-
-.nav_welcome {
-  width: 35%;
-}
-
-.language_button {
+.language button {
   border: none;
-  border-radius: 20px;
-  background-color: #82C0CC;
-  padding: 0 14px;
-  margin-left: 5px;
+  background-color: transparent;
+}
+
+.language li:first-child {
+  border-right: solid 2px #006d77;
+  padding-right: 2px;
+}
+
+.language li:last-child {
+  padding-left: 2px;
 }
